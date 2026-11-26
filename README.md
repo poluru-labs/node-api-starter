@@ -56,3 +56,8 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Public Service Search](node-ai-public-service-search/README.md) indexes services you provide and ranks them by overlap with a query. A term in the name counts more than the category, and the category counts more than eligibility. A service in a different area is left out when both sides name an area.
 - [Disaster Information](node-ai-disaster-information/README.md) stores hazard bulletins and answers a place-and-time query with the active ones plus standard protective actions. Expired bulletins are left out. The service does not fetch a live government feed.
 - [Nonprofit Impact](node-ai-nonprofit-impact/README.md) records a program and its activities, then sums beneficiaries and cost. Cost per beneficiary divides total cost by the sum of activity beneficiaries. Activities without an outcome are reported separately.
+### Data
+
+- [Data Provenance](node-ai-data-provenance/README.md) records an artifact by content or by SHA-256 digest, then records which artifacts were inputs to a derivation. Lineage walks upstream. A derivation that would create a cycle is rejected.
+- [Dataset Quality](node-ai-dataset-quality/README.md) profiles up to 500 object rows for missing values, observed types, uniqueness, numeric outliers, duplicate rows, and violations of an optional string, number, or boolean schema.
+- [Synthetic Data Validator](node-ai-synthetic-data-validator/README.md) checks generated rows against declared types, ranges, and categories, and flags duplicate rows and values that look like direct identifiers. Row values are not stored.
