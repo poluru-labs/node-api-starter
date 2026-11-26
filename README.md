@@ -46,3 +46,7 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Systematic Review](node-ai-systematic-review/README.md) screens study records against include and exclude terms and returns PRISMA-style counts. The service does not search an external library.
 - [Research Artifact Index](node-ai-research-artifact-index/README.md) stores papers, datasets, code, models, and protocols, then links them with cites, uses, or derives. Search matches title terms. URLs are not fetched.
 - [Research Reproducibility](node-ai-research-reproducibility/README.md) scores a study for data, code, a pinned environment, a seed, a command, hardware notes, and a license. The badge is reusable when data, code, environment, command, and license are present, and functional when code and a command are present.
+### Cost and dependencies
+
+- [Cloud Cost Advisor](node-ai-cloud-cost-advisor/README.md) stores hourly USD rates, prices a usage submission, and compares it with the previous submission for the same account. Advice covers unknown SKUs, idle quantity, spend spikes, and a single SKU that dominates the bill.
+- [Dependency Triage](node-ai-dependency-triage/README.md) scores a dependency list for security advisories, deprecated packages, licenses outside an allow list, outdated versions, and duplicate installs. The service does not call a package registry.
