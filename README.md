@@ -43,3 +43,6 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 
 - [Citation Checker](node-ai-citation-checker/README.md) finds Author (Year) and (Author, Year) citations, then reports references that are never cited, citations with no reference, and DOIs that are not `10.xxxx/suffix`.
 - [Literature Discovery](node-ai-literature-discovery/README.md) indexes papers you provide and ranks them by overlap with a query. A term in the title counts more than a keyword, and a keyword counts more than an abstract term. The service does not call an external library.
+- [Systematic Review](node-ai-systematic-review/README.md) screens study records against include and exclude terms and returns PRISMA-style counts. The service does not search an external library.
+- [Research Artifact Index](node-ai-research-artifact-index/README.md) stores papers, datasets, code, models, and protocols, then links them with cites, uses, or derives. Search matches title terms. URLs are not fetched.
+- [Research Reproducibility](node-ai-research-reproducibility/README.md) scores a study for data, code, a pinned environment, a seed, a command, hardware notes, and a license. The badge is reusable when data, code, environment, command, and license are present, and functional when code and a command are present.
