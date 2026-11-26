@@ -50,3 +50,7 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 
 - [Cloud Cost Advisor](node-ai-cloud-cost-advisor/README.md) stores hourly USD rates, prices a usage submission, and compares it with the previous submission for the same account. Advice covers unknown SKUs, idle quantity, spend spikes, and a single SKU that dominates the bill.
 - [Dependency Triage](node-ai-dependency-triage/README.md) scores a dependency list for security advisories, deprecated packages, licenses outside an allow list, outdated versions, and duplicate installs. The service does not call a package registry.
+### Community and public information
+
+- [Community Resource Matcher](node-ai-community-resource-matcher/README.md) stores resources with needs and an optional region or coordinates. A match request ranks resources that share a need, prefers the same region, and lowers the score by distance.
+- [Public Service Search](node-ai-public-service-search/README.md) indexes services you provide and ranks them by overlap with a query. A term in the name counts more than the category, and the category counts more than eligibility. A service in a different area is left out when both sides name an area.
