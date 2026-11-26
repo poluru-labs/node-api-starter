@@ -32,3 +32,7 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Answer Verification](node-ai-answer-verification/README.md) splits an answer into sentences and scores each one against the supplied sources with token overlap. This is a lexical check. Cite a source as `[sourceId]` in the sentence. The verdict is supported, partial, or unsupported.
 - [Output Validation](node-ai-output-validation/README.md) checks a JSON value against a contract for type, enum, range, length, required properties, and extra properties. The raw output is not stored.
 - [API Contract Monitor](node-ai-api-contract-monitor/README.md) declares the status, required fields, JSON types, and latency budget for an operation. Each observation is checked against that contract. The response body is not retained after the check.
+### APIs and code
+
+- [BFF Starter](node-ai-bff-starter/README.md) puts named JSON resources behind one view so a client can read a screen in a single response. A missing optional part comes back as null with partial set. A missing required part sets ok to false. The service does not call arbitrary upstream URLs.
+- [Code Review](node-ai-code-review/README.md) scans submitted files for secrets, dynamic code execution, debugger statements, empty catches, loose equality, console logging, long lines, and long files. Finding messages do not repeat secret values.
