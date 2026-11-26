@@ -15,3 +15,8 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 
 - [Assistive Reading](node-ai-assistive-reading/README.md) grades a passage with Flesch–Kincaid, flags long sentences and hard words, and replaces a fixed set of difficult phrases when the grade is above the requested target.
 - [Plain Language API](node-ai-plain-language-api/README.md) flags long sentences, passive forms, and a fixed jargon list, then replaces those phrases. A general audience uses a 20-word sentence limit. An expert audience uses 30.
+### Learning
+
+- [Adaptive Learning](node-ai-adaptive-learning/README.md) records learner attempts against a fixed skill catalog. The next recommendation is the lowest-mastery skill, with difficulty from 1 to 5.
+- [Skills Assessment](node-ai-skills-assessment/README.md) scores a learner on a fixed competency rubric and reports the average, whether the target level was met, and the skills still below it.
+- [Teacher Feedback](node-ai-teacher-feedback/README.md) turns rubric scores into strength, developing, and practice comments. The essay itself is not stored.
