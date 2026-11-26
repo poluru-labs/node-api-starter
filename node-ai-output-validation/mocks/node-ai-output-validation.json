@@ -1,0 +1,24 @@
+{
+  "endpoint": "/v1/mock/validations",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "out-12",
+      "contract": "desk-reply",
+      "ok": false,
+      "violations": ["enum_mismatch", "additional_property"]
+    },
+    {
+      "id": "out-13",
+      "contract": "fare-quote",
+      "ok": true,
+      "violations": []
+    },
+    {
+      "id": "out-19",
+      "contract": "lab-slot",
+      "ok": false,
+      "violations": ["type_mismatch", "range"]
+    }
+  ]
+}
