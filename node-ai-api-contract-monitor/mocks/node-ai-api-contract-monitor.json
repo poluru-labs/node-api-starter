@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/contracts",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "ctr-15",
+      "service": "member-api",
+      "method": "GET",
+      "path": "/v1/members/{id}",
+      "expectedStatus": 200,
+      "maxLatencyMs": 250,
+      "lastOk": false
+    },
+    {
+      "id": "ctr-16",
+      "service": "member-api",
+      "method": "POST",
+      "path": "/v1/members",
+      "expectedStatus": 201,
+      "maxLatencyMs": 400,
+      "lastOk": true
+    },
+    {
+      "id": "ctr-22",
+      "service": "billing-api",
+      "method": "GET",
+      "path": "/v1/invoices/{id}",
+      "expectedStatus": 200,
+      "maxLatencyMs": 300,
+      "lastOk": true
+    }
+  ]
+}
