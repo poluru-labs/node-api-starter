@@ -36,3 +36,6 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 
 - [BFF Starter](node-ai-bff-starter/README.md) puts named JSON resources behind one view so a client can read a screen in a single response. A missing optional part comes back as null with partial set. A missing required part sets ok to false. The service does not call arbitrary upstream URLs.
 - [Code Review](node-ai-code-review/README.md) scans submitted files for secrets, dynamic code execution, debugger statements, empty catches, loose equality, console logging, long lines, and long files. Finding messages do not repeat secret values.
+- [Documentation Checker](node-ai-documentation-checker/README.md) reviews a README, API page, changelog, or contributing guide for required sections, an unclosed code fence, empty links, images without alternative text, and leftover TODO or FIXME notes.
+- [Test Gap Analyzer](node-ai-test-gap-analyzer/README.md) compares source files with test files and reports functions whose names never appear in a test. File contents are not stored.
+- [Legacy Code Explorer](node-ai-legacy-code-explorer/README.md) scans submitted files for long files, long functions, deep brace nesting, TODO or FIXME notes, goto, and import or require dependencies. The scan is lexical and does not execute the code.
