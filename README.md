@@ -7,3 +7,7 @@ The folders beside this file are small JSON APIs built from that starter. Each o
 Created by [Subrahmanyam Poluru](https://polurus.com).
 
 ## Projects
+### Accessibility
+
+- [Accessibility Auditor](node-ai-accessibility-auditor/README.md) checks HTML against a documented WCAG subset and stores a score with findings. The rules cover language, title, alternative text, names, labels, landmarks, heading order, viewport, and tabindex. Checks are deterministic and do not call a model.
+- [Document Accessibility](node-ai-document-accessibility/README.md) checks a structured document for a title, language, image alternative text, heading order, table headers, and named links. The score starts at 100 and drops by impact. The document itself is not stored.
