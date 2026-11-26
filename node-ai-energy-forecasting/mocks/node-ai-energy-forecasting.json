@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/series",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "ser-depot-kwh",
+      "site": "Northline depot",
+      "unit": "kWh",
+      "points": 28,
+      "mae": 12.4,
+      "nextDay": "2026-11-27",
+      "forecast": 640
+    },
+    {
+      "id": "ser-clinic-kw",
+      "site": "Harbor Clinic",
+      "unit": "kW",
+      "points": 21,
+      "mae": 3.1,
+      "nextDay": "2026-11-27",
+      "forecast": 48
+    },
+    {
+      "id": "ser-library-kwh",
+      "site": "Cedar County Library",
+      "unit": "kWh",
+      "points": 14,
+      "mae": 0,
+      "nextDay": "2026-11-27",
+      "forecast": 210
+    }
+  ]
+}
