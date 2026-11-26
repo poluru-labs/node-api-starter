@@ -54,3 +54,5 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 
 - [Community Resource Matcher](node-ai-community-resource-matcher/README.md) stores resources with needs and an optional region or coordinates. A match request ranks resources that share a need, prefers the same region, and lowers the score by distance.
 - [Public Service Search](node-ai-public-service-search/README.md) indexes services you provide and ranks them by overlap with a query. A term in the name counts more than the category, and the category counts more than eligibility. A service in a different area is left out when both sides name an area.
+- [Disaster Information](node-ai-disaster-information/README.md) stores hazard bulletins and answers a place-and-time query with the active ones plus standard protective actions. Expired bulletins are left out. The service does not fetch a live government feed.
+- [Nonprofit Impact](node-ai-nonprofit-impact/README.md) records a program and its activities, then sums beneficiaries and cost. Cost per beneficiary divides total cost by the sum of activity beneficiaries. Activities without an outcome are reported separately.
