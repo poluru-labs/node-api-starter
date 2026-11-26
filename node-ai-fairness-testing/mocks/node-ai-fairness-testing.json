@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/fairness",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "fair-hold-times",
+      "model": "callback-priority",
+      "groups": 2,
+      "disparateImpact": 0.62,
+      "equalOpportunityGap": 0.18,
+      "ok": false,
+      "smallSample": false
+    },
+    {
+      "id": "fair-no-show",
+      "model": "clinic-reminder",
+      "groups": 3,
+      "disparateImpact": 0.91,
+      "equalOpportunityGap": 0.04,
+      "ok": true,
+      "smallSample": false
+    },
+    {
+      "id": "fair-fare-assist",
+      "model": "fare-assist",
+      "groups": 2,
+      "disparateImpact": 0.84,
+      "equalOpportunityGap": 0.07,
+      "ok": false,
+      "smallSample": true
+    }
+  ]
+}
