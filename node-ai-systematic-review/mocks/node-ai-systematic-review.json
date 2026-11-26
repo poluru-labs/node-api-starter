@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/screenings",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "scr-reminders",
+      "question": "Do text reminders reduce missed morning labs?",
+      "identified": 46,
+      "included": 8,
+      "excluded": 31,
+      "maybe": 7
+    },
+    {
+      "id": "scr-shelters",
+      "question": "Do shaded shelters lower afternoon deck temperature?",
+      "identified": 22,
+      "included": 3,
+      "excluded": 16,
+      "maybe": 3
+    },
+    {
+      "id": "scr-pantry",
+      "question": "Does a weekday box limit reduce wasted produce?",
+      "identified": 18,
+      "included": 2,
+      "excluded": 14,
+      "maybe": 2
+    }
+  ]
+}
