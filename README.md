@@ -26,3 +26,7 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Agent Replay](node-ai-agent-replay/README.md) stores a baseline sequence of tool or model steps and compares a later run. Object key order does not affect equality. A diff names the step and the field that changed.
 - [Tool Permissions](node-ai-tool-permissions/README.md) registers agent tools with a risk and scopes, then allows, denies, or requires approval for a requested call. The service does not execute the tool.
 - [Human Approval](node-ai-human-approval/README.md) queues an agent action for review. Low risk is approved by policy. Medium, high, and critical stay pending until a person approves or rejects them. A critical approval needs a reason, and secret-like payload fields are stored as `[redacted]`.
+### Review and verification
+
+- [Annotation Review](node-ai-annotation-review/README.md) collects labels for an item, replaces a repeat vote from the same annotator, and reports majority, conflicts, pairwise agreement, and corpus Fleiss' kappa.
+- [Answer Verification](node-ai-answer-verification/README.md) splits an answer into sentences and scores each one against the supplied sources with token overlap. This is a lexical check. Cite a source as `[sourceId]` in the sentence. The verdict is supported, partial, or unsupported.
