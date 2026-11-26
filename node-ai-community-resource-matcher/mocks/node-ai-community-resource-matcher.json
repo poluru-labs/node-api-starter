@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/resources",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "res-duluth-pantry",
+      "name": "Hillside Food Pantry",
+      "needs": ["food", "diapers"],
+      "region": "duluth",
+      "latitude": 46.7833,
+      "longitude": -92.1066,
+      "phone": "218-555-0148"
+    },
+    {
+      "id": "res-tacoma-legal",
+      "name": "Port Legal Aid Desk",
+      "needs": ["housing", "legal"],
+      "region": "tacoma",
+      "latitude": 47.2529,
+      "longitude": -122.4443,
+      "phone": "253-555-0172"
+    },
+    {
+      "id": "res-boise-rides",
+      "name": "Bench Ride Share",
+      "needs": ["transport"],
+      "region": "boise",
+      "latitude": 43.615,
+      "longitude": -116.2023,
+      "phone": "208-555-0194"
+    }
+  ]
+}
