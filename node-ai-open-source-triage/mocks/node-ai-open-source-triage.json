@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/items",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "iss-318",
+      "kind": "issue",
+      "title": "Route board crashes when the GPS fix is missing",
+      "queue": "needs-info",
+      "priority": "high",
+      "reason": "needs_reproduction"
+    },
+    {
+      "id": "pr-90",
+      "kind": "pull",
+      "title": "Correct the Saturday fare table",
+      "queue": "needs-info",
+      "priority": "medium",
+      "reason": "needs_test"
+    },
+    {
+      "id": "iss-344",
+      "kind": "issue",
+      "title": "Typo in the depot README",
+      "queue": "good-first-issue",
+      "priority": "low",
+      "reason": "docs"
+    }
+  ]
+}
