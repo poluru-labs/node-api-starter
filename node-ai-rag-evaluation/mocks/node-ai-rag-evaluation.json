@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/rag",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "rag-14",
+      "question": "Where do Hillside pantry boxes get packed?",
+      "faithfulness": 1,
+      "answerRelevance": 0.8,
+      "contextRelevance": 0.75,
+      "unknownCitations": [],
+      "ok": true
+    },
+    {
+      "id": "rag-15",
+      "question": "Which bus replaces Route 11 after 7 p.m.?",
+      "faithfulness": 0.25,
+      "answerRelevance": 0.6,
+      "contextRelevance": 0.4,
+      "unknownCitations": ["c9"],
+      "ok": false
+    },
+    {
+      "id": "rag-21",
+      "question": "How early should a patient stop food before a lipid panel?",
+      "faithfulness": 0.67,
+      "answerRelevance": 1,
+      "contextRelevance": 0.5,
+      "unknownCitations": [],
+      "ok": true
+    }
+  ]
+}
