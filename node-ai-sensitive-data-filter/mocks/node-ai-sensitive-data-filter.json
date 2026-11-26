@@ -1,0 +1,41 @@
+{
+  "endpoint": "/v1/mock/filters",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "flt-4418",
+      "channel": "support-ticket",
+      "receivedAt": "2026-11-03T15:41:00Z",
+      "ok": false,
+      "findings": [
+        {
+          "kind": "card",
+          "count": 1
+        },
+        {
+          "kind": "email",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "flt-4420",
+      "channel": "chat",
+      "receivedAt": "2026-11-09T20:12:00Z",
+      "ok": false,
+      "findings": [
+        {
+          "kind": "phone",
+          "count": 1
+        }
+      ]
+    },
+    {
+      "id": "flt-4433",
+      "channel": "uploaded-note",
+      "receivedAt": "2026-11-21T13:05:00Z",
+      "ok": true,
+      "findings": []
+    }
+  ]
+}
