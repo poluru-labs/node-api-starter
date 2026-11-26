@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/passages",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "pln-70",
+      "audience": "general",
+      "score": 72,
+      "findings": ["jargon", "passive"],
+      "source": "benefit-letter-paragraph-2"
+    },
+    {
+      "id": "pln-71",
+      "audience": "general",
+      "score": 90,
+      "findings": ["long_sentence"],
+      "source": "bus-alert-sms"
+    },
+    {
+      "id": "pln-77",
+      "audience": "expert",
+      "score": 96,
+      "findings": [],
+      "source": "lab-protocol-step-4"
+    }
+  ]
+}
