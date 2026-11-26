@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/papers",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "pap-heat-island",
+      "title": "Surface temperature on Duluth bus shelters",
+      "year": 2024,
+      "doi": "10.1029/2024GH000118",
+      "keywords": ["heat", "transit", "duluth"]
+    },
+    {
+      "id": "pap-no-show",
+      "title": "Text reminders and missed morning labs",
+      "year": 2023,
+      "doi": "10.1001/jama.2023.11820",
+      "keywords": ["clinic", "attendance", "sms"]
+    },
+    {
+      "id": "pap-pantry",
+      "title": "Weekday demand at a Hillside food pantry",
+      "year": 2025,
+      "doi": "10.1016/j.foodpol.2025.102118",
+      "keywords": ["food", "pantry", "demand"]
+    }
+  ]
+}
