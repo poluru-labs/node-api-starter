@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/segments",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "seg-441",
+      "sourceLocale": "en",
+      "targetLocale": "es",
+      "key": "fare.transfer",
+      "ok": false,
+      "findings": ["placeholder_mismatch"]
+    },
+    {
+      "id": "seg-442",
+      "sourceLocale": "en",
+      "targetLocale": "so",
+      "key": "clinic.fasting",
+      "ok": false,
+      "findings": ["untranslated"]
+    },
+    {
+      "id": "seg-450",
+      "sourceLocale": "en",
+      "targetLocale": "hmn",
+      "key": "pantry.hours",
+      "ok": true,
+      "findings": []
+    }
+  ]
+}
