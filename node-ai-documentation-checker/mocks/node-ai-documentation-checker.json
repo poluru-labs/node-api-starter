@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/doc-checks",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "chk-readme-fare",
+      "path": "README.md",
+      "kind": "readme",
+      "ok": false,
+      "findings": ["missing_license", "image_alt"]
+    },
+    {
+      "id": "chk-api-ledger",
+      "path": "docs/api.md",
+      "kind": "api",
+      "ok": true,
+      "findings": []
+    },
+    {
+      "id": "chk-changelog-board",
+      "path": "CHANGELOG.md",
+      "kind": "changelog",
+      "ok": false,
+      "findings": ["unclosed_fence"]
+    }
+  ]
+}
