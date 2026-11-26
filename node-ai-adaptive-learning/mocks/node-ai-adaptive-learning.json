@@ -1,0 +1,45 @@
+{
+  "endpoint": "/v1/mock/learners",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "lrn-441",
+      "name": "Marisol Vega",
+      "course": "fractions-grade-4",
+      "mastery": {
+        "foundations": 0.82,
+        "practice": 0.61,
+        "transfer": 0.4
+      },
+      "nextSkill": "practice",
+      "nextDifficulty": 3,
+      "updatedAt": "2026-11-21T16:20:00Z"
+    },
+    {
+      "id": "lrn-448",
+      "name": "Owen Prieto",
+      "course": "fractions-grade-4",
+      "mastery": {
+        "foundations": 0.47,
+        "practice": 0.33,
+        "transfer": 0.2
+      },
+      "nextSkill": "foundations",
+      "nextDifficulty": 2,
+      "updatedAt": "2026-11-22T09:14:00Z"
+    },
+    {
+      "id": "lrn-452",
+      "name": "Hanae Sato",
+      "course": "fractions-grade-4",
+      "mastery": {
+        "foundations": 0.93,
+        "practice": 0.88,
+        "transfer": 0.71
+      },
+      "nextSkill": "transfer",
+      "nextDifficulty": 4,
+      "updatedAt": "2026-11-24T13:48:00Z"
+    }
+  ]
+}
