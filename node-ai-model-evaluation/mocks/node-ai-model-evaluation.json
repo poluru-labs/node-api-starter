@@ -1,0 +1,31 @@
+{
+  "endpoint": "/v1/mock/model-scores",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "mev-intent-v3",
+      "model": "desk-intent-v3",
+      "task": "classification",
+      "rows": 240,
+      "accuracy": 0.8625,
+      "macroF1": 0.8411
+    },
+    {
+      "id": "mev-fare-reg",
+      "model": "fare-minutes",
+      "task": "regression",
+      "rows": 1000,
+      "mae": 1.84,
+      "rmse": 2.47,
+      "bias": -0.22
+    },
+    {
+      "id": "mev-reminder",
+      "model": "clinic-reminder",
+      "task": "classification",
+      "rows": 600,
+      "accuracy": 0.79,
+      "macroF1": 0.74
+    }
+  ]
+}
