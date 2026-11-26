@@ -20,3 +20,7 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Adaptive Learning](node-ai-adaptive-learning/README.md) records learner attempts against a fixed skill catalog. The next recommendation is the lowest-mastery skill, with difficulty from 1 to 5.
 - [Skills Assessment](node-ai-skills-assessment/README.md) scores a learner on a fixed competency rubric and reports the average, whether the target level was met, and the skills still below it.
 - [Teacher Feedback](node-ai-teacher-feedback/README.md) turns rubric scores into strength, developing, and practice comments. The essay itself is not stored.
+### Agents
+
+- [Agent Observability](node-ai-agent-observability/README.md) records a run and appends llm, tool, retrieval, and handoff events, then returns a latency and error summary. Attribute keys that look like secrets are stored as `[redacted]`.
+- [Agent Replay](node-ai-agent-replay/README.md) stores a baseline sequence of tool or model steps and compares a later run. Object key order does not affect equality. A diff names the step and the field that changed.
