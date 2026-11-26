@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/requests",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "apr-1008",
+      "action": "refund-fare",
+      "risk": "medium",
+      "status": "pending",
+      "requestedBy": "desk-scheduler",
+      "openedAt": "2026-11-25T14:22:00Z"
+    },
+    {
+      "id": "apr-1014",
+      "action": "send-denial-letter",
+      "risk": "high",
+      "status": "pending",
+      "requestedBy": "claims-triage",
+      "openedAt": "2026-11-25T15:01:00Z"
+    },
+    {
+      "id": "apr-980",
+      "action": "extend-hold",
+      "risk": "low",
+      "status": "approved",
+      "requestedBy": "policy",
+      "openedAt": "2026-11-20T09:12:00Z"
+    }
+  ]
+}
