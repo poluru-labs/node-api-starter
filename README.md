@@ -61,3 +61,8 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Data Provenance](node-ai-data-provenance/README.md) records an artifact by content or by SHA-256 digest, then records which artifacts were inputs to a derivation. Lineage walks upstream. A derivation that would create a cycle is rejected.
 - [Dataset Quality](node-ai-dataset-quality/README.md) profiles up to 500 object rows for missing values, observed types, uniqueness, numeric outliers, duplicate rows, and violations of an optional string, number, or boolean schema.
 - [Synthetic Data Validator](node-ai-synthetic-data-validator/README.md) checks generated rows against declared types, ranges, and categories, and flags duplicate rows and values that look like direct identifiers. Row values are not stored.
+### Forecasting and monitoring
+
+- [Energy Forecasting](node-ai-energy-forecasting/README.md) stores a daily series in kWh, kW, or MWh. Fourteen or more points use a 7-day seasonal naive forecast. Shorter series use a straight line. Points far from the median are reported as anomalies.
+- [Food Waste Forecasting](node-ai-food-waste-forecasting/README.md) summarizes prepared, sold, and wasted amounts by item. A high waste rate recommends preparing less. Frequent stockouts recommend preparing more. The suggested amount follows the trailing mean of units sold.
+- [Water Anomaly Monitor](node-ai-water-anomaly-monitor/README.md) flags negative readings, turbidity above a threshold, sudden spikes, and flat stretches in a local series. It does not connect to a sensor network.
