@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/synthetic-checks",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "syn-boardings",
+      "name": "synthetic-boardings-v1",
+      "rows": 200,
+      "duplicateRows": 4,
+      "ok": false,
+      "findings": ["duplicate_row", "out_of_range"]
+    },
+    {
+      "id": "syn-visits",
+      "name": "synthetic-visits-v2",
+      "rows": 200,
+      "duplicateRows": 0,
+      "ok": false,
+      "findings": ["sensitive_value"]
+    },
+    {
+      "id": "syn-labs",
+      "name": "synthetic-labs-v1",
+      "rows": 80,
+      "duplicateRows": 0,
+      "ok": true,
+      "findings": []
+    }
+  ]
+}
