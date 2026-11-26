@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/bulletins",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "bul-flood-204",
+      "event": "flood",
+      "area": "duluth",
+      "headline": "Chester Creek at minor flood stage through tonight",
+      "issuedAt": "2026-04-12T06:30:00Z",
+      "expiresAt": "2026-04-13T06:30:00Z",
+      "source": "bulletin"
+    },
+    {
+      "id": "bul-heat-088",
+      "event": "heat",
+      "area": "tacoma",
+      "headline": "Heat advisory for the tideflats until 8 p.m. Wednesday",
+      "issuedAt": "2026-07-21T16:00:00Z",
+      "expiresAt": "2026-07-23T03:00:00Z",
+      "source": "bulletin"
+    },
+    {
+      "id": "bul-wind-055",
+      "event": "winter-storm",
+      "area": "boise",
+      "headline": "Snow and blowing snow on I-84 after 4 p.m.",
+      "issuedAt": "2026-01-09T18:10:00Z",
+      "expiresAt": "2026-01-11T06:00:00Z",
+      "source": "bulletin"
+    }
+  ]
+}
