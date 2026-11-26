@@ -30,3 +30,5 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 
 - [Annotation Review](node-ai-annotation-review/README.md) collects labels for an item, replaces a repeat vote from the same annotator, and reports majority, conflicts, pairwise agreement, and corpus Fleiss' kappa.
 - [Answer Verification](node-ai-answer-verification/README.md) splits an answer into sentences and scores each one against the supplied sources with token overlap. This is a lexical check. Cite a source as `[sourceId]` in the sentence. The verdict is supported, partial, or unsupported.
+- [Output Validation](node-ai-output-validation/README.md) checks a JSON value against a contract for type, enum, range, length, required properties, and extra properties. The raw output is not stored.
+- [API Contract Monitor](node-ai-api-contract-monitor/README.md) declares the status, required fields, JSON types, and latency budget for an operation. Each observation is checked against that contract. The response body is not retained after the check.
