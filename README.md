@@ -24,3 +24,5 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 
 - [Agent Observability](node-ai-agent-observability/README.md) records a run and appends llm, tool, retrieval, and handoff events, then returns a latency and error summary. Attribute keys that look like secrets are stored as `[redacted]`.
 - [Agent Replay](node-ai-agent-replay/README.md) stores a baseline sequence of tool or model steps and compares a later run. Object key order does not affect equality. A diff names the step and the field that changed.
+- [Tool Permissions](node-ai-tool-permissions/README.md) registers agent tools with a risk and scopes, then allows, denies, or requires approval for a requested call. The service does not execute the tool.
+- [Human Approval](node-ai-human-approval/README.md) queues an agent action for review. Low risk is approved by policy. Medium, high, and critical stay pending until a person approves or rejects them. A critical approval needs a reason, and secret-like payload fields are stored as `[redacted]`.
