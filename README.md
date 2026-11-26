@@ -39,3 +39,7 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Documentation Checker](node-ai-documentation-checker/README.md) reviews a README, API page, changelog, or contributing guide for required sections, an unclosed code fence, empty links, images without alternative text, and leftover TODO or FIXME notes.
 - [Test Gap Analyzer](node-ai-test-gap-analyzer/README.md) compares source files with test files and reports functions whose names never appear in a test. File contents are not stored.
 - [Legacy Code Explorer](node-ai-legacy-code-explorer/README.md) scans submitted files for long files, long functions, deep brace nesting, TODO or FIXME notes, goto, and import or require dependencies. The scan is lexical and does not execute the code.
+### Research
+
+- [Citation Checker](node-ai-citation-checker/README.md) finds Author (Year) and (Author, Year) citations, then reports references that are never cited, citations with no reference, and DOIs that are not `10.xxxx/suffix`.
+- [Literature Discovery](node-ai-literature-discovery/README.md) indexes papers you provide and ranks them by overlap with a query. A term in the title counts more than a keyword, and a keyword counts more than an abstract term. The service does not call an external library.
