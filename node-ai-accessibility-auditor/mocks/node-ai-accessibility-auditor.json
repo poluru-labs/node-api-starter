@@ -1,0 +1,58 @@
+{
+  "endpoint": "/v1/mock/audits",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "aud-1842",
+      "page": "https://library.cedarcounty.gov/hours",
+      "level": "AA",
+      "score": 78,
+      "checkedAt": "2026-11-02T14:10:00Z",
+      "findings": [
+        {
+          "rule": "image-alt",
+          "impact": "critical",
+          "wcag": "1.1.1"
+        },
+        {
+          "rule": "heading-order",
+          "impact": "serious",
+          "wcag": "1.3.1"
+        }
+      ]
+    },
+    {
+      "id": "aud-1907",
+      "page": "https://pay.harborclinic.org/bill",
+      "level": "AA",
+      "score": 64,
+      "checkedAt": "2026-10-28T18:42:00Z",
+      "findings": [
+        {
+          "rule": "label",
+          "impact": "serious",
+          "wcag": "1.3.1"
+        },
+        {
+          "rule": "button-name",
+          "impact": "critical",
+          "wcag": "4.1.2"
+        }
+      ]
+    },
+    {
+      "id": "aud-2033",
+      "page": "https://lunch.pikestreetschools.edu/menu",
+      "level": "A",
+      "score": 91,
+      "checkedAt": "2026-11-19T11:05:00Z",
+      "findings": [
+        {
+          "rule": "link-name",
+          "impact": "serious",
+          "wcag": "2.4.4"
+        }
+      ]
+    }
+  ]
+}
