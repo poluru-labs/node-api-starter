@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/datasets",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "ds-boardings-oct",
+      "name": "october-boardings",
+      "rows": 480,
+      "duplicateRows": 6,
+      "missingCells": 14,
+      "score": 71,
+      "ok": false
+    },
+    {
+      "id": "ds-lab-panel",
+      "name": "morning-lab-panel",
+      "rows": 120,
+      "duplicateRows": 0,
+      "missingCells": 2,
+      "score": 96,
+      "ok": true
+    },
+    {
+      "id": "ds-pantry-visits",
+      "name": "pantry-visits-q3",
+      "rows": 860,
+      "duplicateRows": 22,
+      "missingCells": 40,
+      "score": 54,
+      "ok": false
+    }
+  ]
+}
