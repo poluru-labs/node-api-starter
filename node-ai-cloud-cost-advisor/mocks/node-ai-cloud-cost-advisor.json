@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/accounts",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "acct-prod-edge",
+      "name": "prod-edge",
+      "currency": "USD",
+      "month": "2026-10",
+      "total": 1842.16,
+      "flags": ["spend_spike"],
+      "topSku": "egress-gb"
+    },
+    {
+      "id": "acct-batch",
+      "name": "nightly-batch",
+      "currency": "USD",
+      "month": "2026-10",
+      "total": 640.5,
+      "flags": ["idle"],
+      "topSku": "gpu-hour"
+    },
+    {
+      "id": "acct-logs",
+      "name": "log-archive",
+      "currency": "USD",
+      "month": "2026-10",
+      "total": 96.2,
+      "flags": [],
+      "topSku": "object-gb-month"
+    }
+  ]
+}
