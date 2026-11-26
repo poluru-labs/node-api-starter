@@ -1,0 +1,36 @@
+{
+  "endpoint": "/v1/mock/replays",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "rpl-110",
+      "name": "member-lookup-baseline",
+      "recordedAt": "2026-09-14T12:00:00Z",
+      "steps": 4,
+      "latest": {
+        "ok": true,
+        "changedSteps": 0
+      }
+    },
+    {
+      "id": "rpl-118",
+      "name": "slot-hold-baseline",
+      "recordedAt": "2026-10-02T12:00:00Z",
+      "steps": 3,
+      "latest": {
+        "ok": false,
+        "changedSteps": 1
+      }
+    },
+    {
+      "id": "rpl-126",
+      "name": "denial-letter-baseline",
+      "recordedAt": "2026-11-01T12:00:00Z",
+      "steps": 6,
+      "latest": {
+        "ok": false,
+        "changedSteps": 2
+      }
+    }
+  ]
+}
