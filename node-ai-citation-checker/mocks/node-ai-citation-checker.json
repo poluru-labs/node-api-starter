@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/citation-checks",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "cit-19",
+      "document": "heat-island-notes",
+      "references": 12,
+      "unmatched": ["Nguyen (2019)"],
+      "uncited": ["10.1029/2020GH000321"],
+      "ok": false
+    },
+    {
+      "id": "cit-20",
+      "document": "transit-ridership-draft",
+      "references": 8,
+      "unmatched": [],
+      "uncited": [],
+      "ok": true
+    },
+    {
+      "id": "cit-27",
+      "document": "clinic-no-show-brief",
+      "references": 6,
+      "unmatched": [],
+      "uncited": ["Patel 2021"],
+      "ok": false
+    }
+  ]
+}

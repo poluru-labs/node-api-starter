@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/documents",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "doc-benefit-guide",
+      "title": "Winter energy benefit guide",
+      "language": "en",
+      "pages": 6,
+      "score": 70,
+      "findings": ["image-alt", "table-header"]
+    },
+    {
+      "id": "doc-route-map",
+      "title": "Route 11 Saturday map",
+      "language": "en",
+      "pages": 1,
+      "score": 55,
+      "findings": ["image-alt", "document-title"]
+    },
+    {
+      "id": "doc-lab-prep",
+      "title": "Fasting lab instructions",
+      "language": "en",
+      "pages": 2,
+      "score": 100,
+      "findings": []
+    }
+  ]
+}

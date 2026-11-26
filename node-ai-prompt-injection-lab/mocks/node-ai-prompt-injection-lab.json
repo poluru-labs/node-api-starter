@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/scans",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "scn-2201",
+      "channel": "retrieved",
+      "risk": "high",
+      "action": "block",
+      "findings": ["instruction_override", "prompt_exfiltration"],
+      "scannedAt": "2026-10-18T09:12:00Z"
+    },
+    {
+      "id": "scn-2208",
+      "channel": "tool",
+      "risk": "moderate",
+      "action": "review",
+      "findings": ["delimiter_spoof"],
+      "scannedAt": "2026-11-02T19:40:00Z"
+    },
+    {
+      "id": "scn-2215",
+      "channel": "user",
+      "risk": "none",
+      "action": "allow",
+      "findings": [],
+      "scannedAt": "2026-11-25T08:16:00Z"
+    }
+  ]
+}

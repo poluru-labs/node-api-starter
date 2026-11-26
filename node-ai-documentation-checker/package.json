@@ -1,0 +1,49 @@
+{
+  "name": "node-ai-documentation-checker",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Check README, API, changelog, and contributing docs. Zero runtime dependencies.",
+  "license": "MIT",
+  "author": "Subrahmanyam Poluru",
+  "type": "module",
+  "engines": {
+    "node": "^22.18.0 || ^24.0.0 || ^25.0.0"
+  },
+  "packageManager": "npm@11.6.2",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "dev": "node --watch --env-file-if-exists=.env src/index.ts",
+    "start": "node --env-file-if-exists=.env dist/index.js",
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "node --test --test-reporter spec \"test/**/*.test.ts\"",
+    "test:coverage": "node --test --experimental-test-coverage --test-reporter spec \"test/**/*.test.ts\"",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm test && npm run build",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^22.19.0",
+    "eslint": "^10.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.10.1",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.73.0"
+  }
+}

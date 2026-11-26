@@ -1,0 +1,36 @@
+{
+  "endpoint": "/v1/mock/kitchens",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "kit-central",
+      "name": "Central campus kitchen",
+      "item": "turkey sandwich",
+      "prepared": 80,
+      "sold": 51,
+      "wasted": 29,
+      "action": "reduce",
+      "recommend": 56
+    },
+    {
+      "id": "kit-west",
+      "name": "West campus kitchen",
+      "item": "lentil soup",
+      "prepared": 40,
+      "sold": 40,
+      "wasted": 0,
+      "action": "increase",
+      "recommend": 44
+    },
+    {
+      "id": "kit-harbor",
+      "name": "Harbor hospital cafe",
+      "item": "oatmeal",
+      "prepared": 30,
+      "sold": 27,
+      "wasted": 3,
+      "action": "hold",
+      "recommend": 30
+    }
+  ]
+}

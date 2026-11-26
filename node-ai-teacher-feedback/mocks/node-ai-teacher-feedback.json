@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/assignments",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "asg-lab-6",
+      "title": "Lipid panel lab report",
+      "student": "Noah Ellis",
+      "total": 5,
+      "maxPoints": 8,
+      "bands": ["strength", "practice"]
+    },
+    {
+      "id": "asg-route-2",
+      "title": "Saturday route writeup",
+      "student": "Priya Raman",
+      "total": 7,
+      "maxPoints": 8,
+      "bands": ["strength", "developing"]
+    },
+    {
+      "id": "asg-budget-1",
+      "title": "Pantry order sheet",
+      "student": "Idris Cole",
+      "total": 4,
+      "maxPoints": 8,
+      "bands": ["developing", "practice"]
+    }
+  ]
+}

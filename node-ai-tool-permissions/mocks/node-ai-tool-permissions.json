@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/tools",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "tool-mail",
+      "name": "send-email",
+      "risk": "medium",
+      "scopes": ["mail.send"],
+      "decision": "allow"
+    },
+    {
+      "id": "tool-refund",
+      "name": "refund-fare",
+      "risk": "high",
+      "scopes": ["fare.refund"],
+      "decision": "require_approval"
+    },
+    {
+      "id": "tool-delete",
+      "name": "delete-account",
+      "risk": "high",
+      "scopes": ["account.delete"],
+      "decision": "deny"
+    }
+  ]
+}

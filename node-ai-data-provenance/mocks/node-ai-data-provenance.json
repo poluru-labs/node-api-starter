@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/artifacts",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "art-221",
+      "name": "october-boardings.csv",
+      "digest": "sha256:9c1e4b0a7d22f6aa10b8c3d91e77a0045bb2c1d0e8f34a6b19c0d77e51aa0041",
+      "bytes": 2401188,
+      "inputs": []
+    },
+    {
+      "id": "art-222",
+      "name": "cleaned-boardings.parquet",
+      "digest": "sha256:11aa90c4d8e77310bb6655440099aa1277c0e1d29f3b6a4c88d10e77c1b20012",
+      "bytes": 804412,
+      "inputs": ["art-221"]
+    },
+    {
+      "id": "art-230",
+      "name": "weekday-peaks.json",
+      "digest": "sha256:77b0c1d29aa4e81033445566778899aabbccddeeff0011223344556677889001",
+      "bytes": 18840,
+      "inputs": ["art-222"]
+    }
+  ]
+}

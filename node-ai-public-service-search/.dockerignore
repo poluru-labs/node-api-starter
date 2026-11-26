@@ -1,0 +1,13 @@
+.git
+.github
+.vscode
+node_modules
+dist
+coverage
+.env
+.env.*
+!.env.example
+npm-debug.log*
+*.md
+Dockerfile
+compose.yaml

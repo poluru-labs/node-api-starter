@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/analyses",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "gap-fare",
+      "repo": "fare-calculator",
+      "functionCount": 28,
+      "coveredCount": 19,
+      "coverage": 0.6786,
+      "gaps": ["settlePartial", "voidHold"]
+    },
+    {
+      "id": "gap-board",
+      "repo": "route-board",
+      "functionCount": 14,
+      "coveredCount": 14,
+      "coverage": 1,
+      "gaps": []
+    },
+    {
+      "id": "gap-ledger",
+      "repo": "member-ledger",
+      "functionCount": 33,
+      "coveredCount": 20,
+      "coverage": 0.6061,
+      "gaps": ["reversePosting", "closeDay", "exportNacha"]
+    }
+  ]
+}

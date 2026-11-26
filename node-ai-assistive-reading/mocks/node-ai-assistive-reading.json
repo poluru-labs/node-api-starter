@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/readings",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "rd-51",
+      "title": "Bus delay notice",
+      "grade": 11.4,
+      "targetGrade": 6,
+      "simplified": true,
+      "words": 86
+    },
+    {
+      "id": "rd-52",
+      "title": "School lunch application",
+      "grade": 8.1,
+      "targetGrade": 6,
+      "simplified": true,
+      "words": 140
+    },
+    {
+      "id": "rd-58",
+      "title": "Clinic visiting hours",
+      "grade": 5.6,
+      "targetGrade": 6,
+      "simplified": false,
+      "words": 42
+    }
+  ]
+}

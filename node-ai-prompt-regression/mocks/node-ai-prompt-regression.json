@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/suites",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "suite-fare-quote",
+      "name": "fare quote wording",
+      "cases": 12,
+      "latestPassRate": 1,
+      "ok": true
+    },
+    {
+      "id": "suite-denial",
+      "name": "denial letter facts",
+      "cases": 8,
+      "latestPassRate": 0.75,
+      "ok": false
+    },
+    {
+      "id": "suite-hours",
+      "name": "branch hours",
+      "cases": 6,
+      "latestPassRate": 0.5,
+      "ok": false
+    }
+  ]
+}

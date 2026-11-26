@@ -1,0 +1,42 @@
+{
+  "endpoint": "/v1/mock/verifications",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "ver-772",
+      "question": "When does the Duluth branch close on Thursday?",
+      "verdict": "supported",
+      "method": "lexical-overlap",
+      "claims": [
+        {
+          "text": "The Duluth branch closes at 6 p.m. on Thursday.",
+          "status": "supported"
+        }
+      ]
+    },
+    {
+      "id": "ver-781",
+      "question": "Is Saturday pickup free at the Tacoma depot?",
+      "verdict": "partial",
+      "method": "lexical-overlap",
+      "claims": [
+        {
+          "text": "Saturday pickup is free for members.",
+          "status": "partial"
+        }
+      ]
+    },
+    {
+      "id": "ver-790",
+      "question": "Does the Boise clinic offer evening labs?",
+      "verdict": "unsupported",
+      "method": "lexical-overlap",
+      "claims": [
+        {
+          "text": "Evening labs run until 8 p.m.",
+          "status": "unsupported"
+        }
+      ]
+    }
+  ]
+}

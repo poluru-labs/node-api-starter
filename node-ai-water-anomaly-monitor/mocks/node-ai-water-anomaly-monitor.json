@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/monitors",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "mon-chester",
+      "name": "Chester Creek intake",
+      "metric": "turbidity",
+      "unit": "NTU",
+      "threshold": 5,
+      "latest": 6.8,
+      "anomalies": ["threshold"]
+    },
+    {
+      "id": "mon-depot",
+      "name": "Depot well",
+      "metric": "flow",
+      "unit": "m3/h",
+      "threshold": null,
+      "latest": 0,
+      "anomalies": ["flatline"]
+    },
+    {
+      "id": "mon-plant",
+      "name": "Plant clearwell",
+      "metric": "level",
+      "unit": "m",
+      "threshold": null,
+      "latest": 3.4,
+      "anomalies": ["spike"]
+    }
+  ]
+}

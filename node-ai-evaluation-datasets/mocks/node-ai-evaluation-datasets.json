@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/dataset-reviews",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "evd-intent-v3",
+      "name": "desk-intent-v3",
+      "task": "classification",
+      "rows": 240,
+      "ok": false,
+      "findings": ["leakage", "imbalance"]
+    },
+    {
+      "id": "evd-qa-routes",
+      "name": "route-questions",
+      "task": "question-answering",
+      "rows": 80,
+      "ok": false,
+      "findings": ["small_set"]
+    },
+    {
+      "id": "evd-extract-bills",
+      "name": "bill-fields",
+      "task": "extraction",
+      "rows": 500,
+      "ok": true,
+      "findings": []
+    }
+  ]
+}

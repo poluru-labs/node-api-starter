@@ -1,0 +1,51 @@
+{
+  "endpoint": "/v1/mock/reviews",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "rev-904",
+      "repo": "fare-calculator",
+      "commit": "b7e1c0a",
+      "findings": [
+        {
+          "rule": "secret",
+          "severity": "critical",
+          "path": "src/pay.ts",
+          "line": 42
+        },
+        {
+          "rule": "empty-catch",
+          "severity": "serious",
+          "path": "src/pay.ts",
+          "line": 88
+        }
+      ]
+    },
+    {
+      "id": "rev-911",
+      "repo": "fare-calculator",
+      "commit": "c19aa04",
+      "findings": [
+        {
+          "rule": "console-log",
+          "severity": "minor",
+          "path": "src/quote.ts",
+          "line": 17
+        }
+      ]
+    },
+    {
+      "id": "rev-928",
+      "repo": "route-board",
+      "commit": "91de440",
+      "findings": [
+        {
+          "rule": "long-file",
+          "severity": "moderate",
+          "path": "src/board.ts",
+          "line": 1
+        }
+      ]
+    }
+  ]
+}

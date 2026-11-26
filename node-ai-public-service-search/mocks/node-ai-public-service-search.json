@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/services",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "svc-heat-aid",
+      "name": "Winter heating help",
+      "area": "duluth",
+      "category": "utilities",
+      "channels": ["phone", "office"],
+      "eligibility": "households at or below 60 percent of state median income"
+    },
+    {
+      "id": "svc-tax-desk",
+      "name": "Saturday tax desk",
+      "area": "tacoma",
+      "category": "taxes",
+      "channels": ["office"],
+      "eligibility": "households filing a simple return"
+    },
+    {
+      "id": "svc-ride",
+      "name": "Non-emergency clinic ride",
+      "area": "boise",
+      "category": "transport",
+      "channels": ["phone", "online"],
+      "eligibility": "patients with a scheduled visit and no working car"
+    }
+  ]
+}

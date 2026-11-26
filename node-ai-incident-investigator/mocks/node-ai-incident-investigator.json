@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/incidents",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "inc-441",
+      "title": "Card charges timing out",
+      "service": "fare-calculator",
+      "severity": "sev2",
+      "status": "monitoring",
+      "openedAt": "2026-11-12T16:40:00Z",
+      "hypotheses": ["recent_deploy", "error_burst"]
+    },
+    {
+      "id": "inc-448",
+      "title": "Member lookup 500s",
+      "service": "member-api",
+      "severity": "sev1",
+      "status": "identified",
+      "openedAt": "2026-11-18T15:11:00Z",
+      "hypotheses": ["error_burst", "cross_service"]
+    },
+    {
+      "id": "inc-460",
+      "title": "Depot kiosk offline",
+      "service": "route-board",
+      "severity": "sev3",
+      "status": "resolved",
+      "openedAt": "2026-11-03T07:20:00Z",
+      "hypotheses": []
+    }
+  ]
+}

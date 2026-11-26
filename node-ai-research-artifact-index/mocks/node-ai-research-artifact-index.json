@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/research-artifacts",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "raf-paper-heat",
+      "kind": "paper",
+      "title": "Surface temperature on Duluth bus shelters",
+      "license": "CC-BY-4.0",
+      "version": "1.0.0"
+    },
+    {
+      "id": "raf-data-temps",
+      "kind": "dataset",
+      "title": "Shelter sensor temperatures, June 2024",
+      "license": "CC0-1.0",
+      "version": "2024-06"
+    },
+    {
+      "id": "raf-code-clean",
+      "kind": "code",
+      "title": "Shelter temperature cleanup",
+      "license": "MIT",
+      "version": "0.3.1"
+    }
+  ]
+}

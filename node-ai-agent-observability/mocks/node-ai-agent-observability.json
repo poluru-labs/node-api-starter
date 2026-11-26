@@ -1,0 +1,65 @@
+{
+  "endpoint": "/v1/mock/runs",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "run-8f21",
+      "agent": "claims-triage",
+      "startedAt": "2026-11-18T15:02:11Z",
+      "status": "ok",
+      "events": [
+        {
+          "kind": "retrieval",
+          "status": "ok",
+          "name": "policy-index"
+        },
+        {
+          "kind": "tool",
+          "status": "ok",
+          "name": "lookup-member"
+        },
+        {
+          "kind": "llm",
+          "status": "ok",
+          "name": "summarize"
+        }
+      ]
+    },
+    {
+      "id": "run-8f44",
+      "agent": "claims-triage",
+      "startedAt": "2026-11-18T15:11:40Z",
+      "status": "error",
+      "events": [
+        {
+          "kind": "tool",
+          "status": "error",
+          "name": "lookup-member"
+        },
+        {
+          "kind": "handoff",
+          "status": "ok",
+          "name": "human-queue"
+        }
+      ]
+    },
+    {
+      "id": "run-9040",
+      "agent": "desk-scheduler",
+      "startedAt": "2026-11-25T08:16:02Z",
+      "status": "ok",
+      "events": [
+        {
+          "kind": "llm",
+          "status": "ok",
+          "name": "parse-request"
+        },
+        {
+          "kind": "tool",
+          "status": "ok",
+          "name": "hold-slot"
+        }
+      ]
+    }
+  ]
+}

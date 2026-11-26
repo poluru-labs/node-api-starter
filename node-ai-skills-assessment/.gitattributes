@@ -1,0 +1,11 @@
+# Keep text files on LF so the template behaves the same on every OS.
+* text=auto eol=lf
+
+# Generated and binary files must not be rewritten or treated as source.
+package-lock.json linguist-generated=true
+*.png binary
+*.jpg binary
+*.webp binary
+*.ico binary
+*.woff binary
+*.woff2 binary

@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/tasks",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "tsk-3301",
+      "itemId": "note-18821",
+      "allowedLabels": ["present", "absent", "uncertain"],
+      "judgments": 3,
+      "agreement": 1,
+      "kappa": 1
+    },
+    {
+      "id": "tsk-3308",
+      "itemId": "note-18844",
+      "allowedLabels": ["present", "absent", "uncertain"],
+      "judgments": 3,
+      "agreement": 0.3333,
+      "kappa": 0
+    },
+    {
+      "id": "tsk-3314",
+      "itemId": "note-19002",
+      "allowedLabels": ["present", "absent", "uncertain"],
+      "judgments": 2,
+      "agreement": 0.5,
+      "kappa": null
+    }
+  ]
+}

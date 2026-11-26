@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/models",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "mdl-small",
+      "name": "small-summarizer",
+      "needs": ["summarize"],
+      "allowsSensitive": false,
+      "costPer1k": 0.1,
+      "latencyMs": 180
+    },
+    {
+      "id": "mdl-coder",
+      "name": "large-coder",
+      "needs": ["summarize", "code"],
+      "allowsSensitive": true,
+      "costPer1k": 2,
+      "latencyMs": 800
+    },
+    {
+      "id": "mdl-ranker",
+      "name": "route-ranker",
+      "needs": ["rank"],
+      "allowsSensitive": false,
+      "costPer1k": 0.02,
+      "latencyMs": 40
+    }
+  ]
+}

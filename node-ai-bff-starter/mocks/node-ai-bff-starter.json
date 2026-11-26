@@ -1,0 +1,27 @@
+{
+  "endpoint": "/v1/mock/views",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "view-account-home",
+      "name": "account-home",
+      "parts": ["profile", "balance", "recent-notices"],
+      "ok": true,
+      "partial": false
+    },
+    {
+      "id": "view-trip-card",
+      "name": "trip-card",
+      "parts": ["next-departure", "fare"],
+      "ok": true,
+      "partial": true
+    },
+    {
+      "id": "view-outage",
+      "name": "outage-banner",
+      "parts": ["status", "affected-routes"],
+      "ok": false,
+      "partial": true
+    }
+  ]
+}

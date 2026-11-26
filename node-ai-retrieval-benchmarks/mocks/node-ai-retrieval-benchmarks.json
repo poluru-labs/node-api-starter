@@ -1,0 +1,36 @@
+{
+  "endpoint": "/v1/mock/retrieval",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "ret-policy-v2",
+      "corpus": "policy-memos",
+      "k": 10,
+      "queries": 40,
+      "precisionAtK": 0.41,
+      "recallAtK": 0.73,
+      "mrr": 0.62,
+      "ndcgAtK": 0.68
+    },
+    {
+      "id": "ret-routes-v1",
+      "corpus": "route-notices",
+      "k": 5,
+      "queries": 25,
+      "precisionAtK": 0.56,
+      "recallAtK": 0.8,
+      "mrr": 0.71,
+      "ndcgAtK": 0.74
+    },
+    {
+      "id": "ret-labs-v4",
+      "corpus": "lab-handouts",
+      "k": 10,
+      "queries": 30,
+      "precisionAtK": 0.22,
+      "recallAtK": 0.4,
+      "mrr": 0.31,
+      "ndcgAtK": 0.35
+    }
+  ]
+}

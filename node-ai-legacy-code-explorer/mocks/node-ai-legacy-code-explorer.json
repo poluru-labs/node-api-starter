@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/explorations",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "exp-fare-legacy",
+      "root": "services/fare",
+      "files": 46,
+      "longFiles": ["src/Settle.java"],
+      "todos": 7,
+      "dependencies": ["com.fare.Money", "org.slf4j.Logger"]
+    },
+    {
+      "id": "exp-kiosk",
+      "root": "kiosk/ui",
+      "files": 22,
+      "longFiles": [],
+      "todos": 3,
+      "dependencies": ["jquery", "./io.js"]
+    },
+    {
+      "id": "exp-cobol-batch",
+      "root": "batch/nightly",
+      "files": 14,
+      "longFiles": ["POSTINGS.cbl"],
+      "todos": 1,
+      "dependencies": ["COPY PAYREC"]
+    }
+  ]
+}
