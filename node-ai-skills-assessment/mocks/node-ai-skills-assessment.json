@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/skill-reports",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "skl-amina",
+      "learner": "Amina Diallo",
+      "targetLevel": 3,
+      "average": 3,
+      "met": false,
+      "gaps": ["problem-solving"]
+    },
+    {
+      "id": "skl-noah",
+      "learner": "Noah Ellis",
+      "targetLevel": 3,
+      "average": 3.5,
+      "met": true,
+      "gaps": []
+    },
+    {
+      "id": "skl-leila",
+      "learner": "Leila Nasser",
+      "targetLevel": 2,
+      "average": 2.25,
+      "met": false,
+      "gaps": ["digital-literacy"]
+    }
+  ]
+}
