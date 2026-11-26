@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/studies",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "stu-heat-2024",
+      "title": "Shelter temperature study",
+      "score": 100,
+      "badge": "reusable",
+      "environment": "lockfile",
+      "command": "python analysis.py"
+    },
+    {
+      "id": "stu-pantry-2025",
+      "title": "Pantry demand notes",
+      "score": 55,
+      "badge": "functional",
+      "environment": "container",
+      "command": "make report"
+    },
+    {
+      "id": "stu-rides-2022",
+      "title": "Clinic ride log",
+      "score": 25,
+      "badge": "incomplete",
+      "environment": "none",
+      "command": null
+    }
+  ]
+}
