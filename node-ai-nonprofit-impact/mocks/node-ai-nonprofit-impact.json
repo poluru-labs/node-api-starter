@@ -1,0 +1,30 @@
+{
+  "endpoint": "/v1/mock/programs",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "prg-pantry",
+      "name": "Hillside pantry boxes",
+      "beneficiaries": 640,
+      "cost": 18200,
+      "costPerBeneficiary": 28.44,
+      "missingOutcomes": 1
+    },
+    {
+      "id": "prg-rides",
+      "name": "Bench clinic rides",
+      "beneficiaries": 210,
+      "cost": 9600,
+      "costPerBeneficiary": 45.71,
+      "missingOutcomes": 0
+    },
+    {
+      "id": "prg-tax",
+      "name": "Saturday tax desk",
+      "beneficiaries": 88,
+      "cost": 4100,
+      "costPerBeneficiary": 46.59,
+      "missingOutcomes": 0
+    }
+  ]
+}
