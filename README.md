@@ -66,3 +66,8 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Energy Forecasting](node-ai-energy-forecasting/README.md) stores a daily series in kWh, kW, or MWh. Fourteen or more points use a 7-day seasonal naive forecast. Shorter series use a straight line. Points far from the median are reported as anomalies.
 - [Food Waste Forecasting](node-ai-food-waste-forecasting/README.md) summarizes prepared, sold, and wasted amounts by item. A high waste rate recommends preparing less. Frequent stockouts recommend preparing more. The suggested amount follows the trailing mean of units sold.
 - [Water Anomaly Monitor](node-ai-water-anomaly-monitor/README.md) flags negative readings, turbidity above a threshold, sudden spikes, and flat stretches in a local series. It does not connect to a sensor network.
+### Model evaluation
+
+- [Evaluation Datasets](node-ai-evaluation-datasets/README.md) reviews items for duplicate ids, empty fields, repeated inputs, the same input in two splits, a missing split, a small set, and a rare classification label. Item text is not stored.
+- [Fairness Testing](node-ai-fairness-testing/README.md) compares binary predictions across groups and reports selection rate, base rate, true positive rate, false positive rate, the four-fifths ratio, and the equal-opportunity gap. A group under 30 rows is marked unreliable.
+- [Model Evaluation](node-ai-model-evaluation/README.md) scores labeled predictions. Classification reports accuracy, per-class precision, recall, F1, macro F1, and a confusion list. Regression reports MAE, RMSE, and bias. Rows are not stored.
