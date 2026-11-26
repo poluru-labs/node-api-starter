@@ -1,0 +1,33 @@
+{
+  "endpoint": "/v1/mock/inference",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "inf-small-summarizer",
+      "model": "small-summarizer",
+      "samples": 200,
+      "p95Ms": 180,
+      "tokensPerSecond": 86.4,
+      "successRate": 0.995,
+      "ok": true
+    },
+    {
+      "id": "inf-large-coder",
+      "model": "large-coder",
+      "samples": 80,
+      "p95Ms": 920,
+      "tokensPerSecond": 21.5,
+      "successRate": 0.975,
+      "ok": false
+    },
+    {
+      "id": "inf-route-ranker",
+      "model": "route-ranker",
+      "samples": 500,
+      "p95Ms": 40,
+      "tokensPerSecond": null,
+      "successRate": 1,
+      "ok": true
+    }
+  ]
+}
