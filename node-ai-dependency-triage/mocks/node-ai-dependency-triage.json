@@ -1,0 +1,50 @@
+{
+  "endpoint": "/v1/mock/reports",
+  "methods": ["GET", "POST", "PUT", "PATCH", "DELETE"],
+  "records": [
+    {
+      "id": "dep-fare-2026-11-20",
+      "project": "fare-calculator",
+      "direct": 18,
+      "findings": [
+        {
+          "package": "jsonwebtoken",
+          "code": "advisory",
+          "severity": "high"
+        },
+        {
+          "package": "left-pad",
+          "code": "deprecated",
+          "severity": "low"
+        }
+      ],
+      "ok": false
+    },
+    {
+      "id": "dep-board-2026-11-20",
+      "project": "route-board",
+      "direct": 11,
+      "findings": [
+        {
+          "package": "lodash",
+          "code": "outdated",
+          "severity": "low"
+        }
+      ],
+      "ok": true
+    },
+    {
+      "id": "dep-ledger-2026-11-22",
+      "project": "member-ledger",
+      "direct": 24,
+      "findings": [
+        {
+          "package": "request",
+          "code": "deprecated",
+          "severity": "moderate"
+        }
+      ],
+      "ok": true
+    }
+  ]
+}
