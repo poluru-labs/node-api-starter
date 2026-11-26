@@ -71,3 +71,9 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [Evaluation Datasets](node-ai-evaluation-datasets/README.md) reviews items for duplicate ids, empty fields, repeated inputs, the same input in two splits, a missing split, a small set, and a rare classification label. Item text is not stored.
 - [Fairness Testing](node-ai-fairness-testing/README.md) compares binary predictions across groups and reports selection rate, base rate, true positive rate, false positive rate, the four-fifths ratio, and the equal-opportunity gap. A group under 30 rows is marked unreliable.
 - [Model Evaluation](node-ai-model-evaluation/README.md) scores labeled predictions. Classification reports accuracy, per-class precision, recall, F1, macro F1, and a confusion list. Regression reports MAE, RMSE, and bias. Rows are not stored.
+### Operations
+
+- [Incident Investigator](node-ai-incident-investigator/README.md) records a timeline of deploys, alerts, metrics, logs, and notes. The service suggests a recent deploy, an error burst, or more than one service when the timestamps support it.
+- [Inference Benchmarks](node-ai-inference-benchmarks/README.md) summarizes successful-request latency percentiles, output tokens per second, and success rate. A run fails its objective when p95 is above the latency limit or the success rate is below the reliability limit.
+- [Model Routing](node-ai-model-routing/README.md) registers model cards and chooses the cheapest one that has the requested capabilities, accepts sensitive input when required, and stays inside the cost and latency caps. Ties break toward lower latency, then name. The service does not call a model.
+- [Multilingual Quality](node-ai-multilingual-quality/README.md) compares source and target segments for an empty target, an unchanged translation, placeholder drift, missing numbers, a large length change, and whitespace differences. Segment text is not stored.
