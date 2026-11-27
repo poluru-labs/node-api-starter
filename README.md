@@ -2,9 +2,9 @@
 
 TypeScript starter for a JSON API, with health checks, tests, CI, and a container image.
 
-The folders beside this file are small JSON APIs built from that starter. Each one documents its routes in its own README, keeps state in memory, and ships a fixture file under `mocks/`. These services check, score, or route data you send them. They do not call a live model, a package registry, or an outside data feed. Open a project README for request shapes, scripts, and the mock API.
+This repository currently ships **50** small JSON APIs built from that starter. Each one documents its routes in its own README, keeps state in memory, and ships a fixture file under `mocks/`. These services check, score, or route data you send them. They do not call a live model, a package registry, or an outside data feed. Open a project README for request shapes, scripts, and the mock API.
 
-Created by [Subrahmanyam Poluru](https://polurus.com).
+Created by [Subrahmanyam Poluru](https://polurus.com). Source: [github.com/poluru-labs/node-api-starter](https://github.com/poluru-labs/node-api-starter).
 
 ## Projects
 ### Accessibility
