@@ -85,3 +85,10 @@ Created by [Subrahmanyam Poluru](https://polurus.com).
 - [RAG Evaluation](node-ai-rag-evaluation/README.md) scores an answer against retrieved contexts with lexical faithfulness, answer relevance, and context relevance. Citations use bracket ids such as `[c1]`. This is a lexical score, not a model judge.
 - [Retrieval Benchmarks](node-ai-retrieval-benchmarks/README.md) averages precision@k, recall@k, mean reciprocal rank, nDCG@k, and hit rate over labeled rankings. Relevance is binary. Ranked lists are not stored.
 - [Sensitive Data Filter](node-ai-sensitive-data-filter/README.md) detects and redacts emails, phone numbers, Social Security numbers, payment card numbers, and secrets before text is logged or sent onward. Findings report the kind and count. The original values are not stored.
+
+## Community
+
+- [Contributing](CONTRIBUTING.md) explains how to change a service and which checks to run.
+- [Code of Conduct](CODE_OF_CONDUCT.md) sets expectations for participation.
+- [Security](SECURITY.md) explains how to report a vulnerability in private.
+- [License](LICENSE) is the MIT license.
